@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer base {
+  @media print {
+    @page {
+      size: A4;
+      margin: 10mm;
+    }
+    body {
+      background: white !important;
+      color: black !important;
+      -webkit-print-color-adjust: exact;
+    }
+    .print\:hidden {
+      display: none !important;
+    }
+    /* Optimization for page breaks */
+    .print\:break-inside-avoid {
+      break-inside: avoid;
+    }
+    .print-container {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      background: white;
+    }
+    table {
+      page-break-inside: auto;
+    }
+    tr {
+      page-break-inside: avoid;
+      page-break-after: auto;
+    }
+    
+    /* Standard table styles for print */
+    td, th {
+      border: 1px solid #e2e8f0 !important;
+    }
+  }
+}
