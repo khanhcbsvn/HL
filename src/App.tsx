@@ -699,7 +699,7 @@ export default function App() {
               <div className="w-16 h-10 bg-white rounded-lg flex items-center justify-center overflow-hidden shrink-0 shadow-lg border border-slate-700/50 p-1">
                 <img
 <img
-  src="./logo.png"
+  src="/logo.png"
   alt="HL Logo"
   className="w-32 h-20 object-contain mx-auto"
 />
@@ -713,7 +713,7 @@ export default function App() {
              <div className="w-16 h-10 bg-white rounded-lg flex items-center justify-center overflow-hidden mx-auto shadow-lg border border-slate-700/50 p-1">
                 <img
 <img
-  src="./logo.png"
+  src="/logo.png"
   alt="HL Logo"
   className="w-32 h-20 object-contain mx-auto"
 />
