@@ -697,7 +697,11 @@ export default function App() {
           {isSidebarOpen ? (
             <div className="flex items-center gap-3">
               <div className="w-16 h-10 bg-white rounded-lg flex items-center justify-center overflow-hidden shrink-0 shadow-lg border border-slate-700/50 p-1">
-                <img src={logoHl} alt="HL Logo" className="w-full h-full object-contain" />
+                <img
+  src="/logo.png"
+  alt="HL Logo"
+  className="w-32 h-20 object-contain mx-auto"
+/>
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-[10px] text-blue-400 tracking-tight leading-tight uppercase">Linh Hân <br/> Production</span>
@@ -706,7 +710,11 @@ export default function App() {
             </div>
           ) : (
              <div className="w-16 h-10 bg-white rounded-lg flex items-center justify-center overflow-hidden mx-auto shadow-lg border border-slate-700/50 p-1">
-                <img src={logoHl} alt="HL Logo" className="w-full h-full object-contain" />
+                <img
+  src="/logo.png"
+  alt="HL Logo"
+  className="w-32 h-20 object-contain mx-auto"
+/>
              </div>
           )}
           {isSidebarOpen && (
